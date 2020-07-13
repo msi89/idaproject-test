@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro";
+  color: #282136;
+}
+body {
+  font-family: "Source Sans Pro", Avenir, Helvetica, Arial, sans-serif;
+  color: #2c3e50;
+  background: #f2f2f2;
+}
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+.tool-group {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  margin-left: 10px;
+}
+.tool-group:first-child {
+  margin-left: 0;
+}
+.filter-tool-group {
+  padding: 5px 10px;
+}
+.separator {
+  height: 1px;
+  background: #ededed;
+}
+.container {
+  width: 90%;
+  margin: 60px auto;
+}
+.header-title {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: #282136;
+}
+button {
+  background: none;
+  outline: none;
+  border: 1px solid #d5dae0;
+  border-radius: 2px;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.btn-default,
+button.btn-link.selected,
+button.btn-link:hover {
+  background: #00a11e;
+  color: #fff;
+}
+button:disabled {
+  background: transparent;
+  border: 1px solid #c6cbd4;
+  color: #5b5e77;
+  cursor: not-allowed;
+}
+button.btn-link {
+  border: 0;
+}
+select {
+  outline: none;
+  background: transparent;
+  border: 1px solid #c6cbd4;
+  padding: 5px 10px;
+}
